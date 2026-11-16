@@ -1,0 +1,114 @@
+
+/* Global styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1D1616;
+    color: #F5F7FA;
+}
+
+/* Header */
+header {
+    background-color: #242B36;
+    font-family: "Bungee", sans-serif;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TrackRecord title */
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header h1 a {
+    color: #D84040;
+    text-decoration: none;
+}
+
+/* Navigation */
+#headernav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#headernav a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+#headernav a:hover {
+    color: #8E1616;
+    transition: color 0.3s ease;
+    transform: scale(1.15);
+}
+
+/* Main content */
+main {
+    padding: 40px 5%;
+}
+
+/* Homepage welcome section */
+main > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+#welcome {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("/trackrecordwelcome.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    padding: 400px 10px 20px;
+}
+#welcome p {
+    color: #EEEEEE;
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Footer */
+
+/* Footer navigation */
+#footernav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#footernav a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+#footernav a:hover {
+    color: #D84040;
+}

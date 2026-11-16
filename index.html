@@ -5,10 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackRecord</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>TrackRecord</h1>
+        <h1><a href="index.html">TrackRecord</a></h1>
+        <nav id="headernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section id="welcome">
+            <p>Journal your musical journey</p>
+            <p>Discover new music and connect with other fans.</p>
+            <p>See what's good and what's not.</p>
+            <div id="register-button">
+            <a href="register.html" class="button">Sign Up - It's Free!</a>
+        </div>
+        </section>
+        <section id="song-gallery">
+            <h2>Featured Reviews</h2>
+            <p>See how others share their music experiences!</p>
+            <p class="gallery-note">Sample reviews for demonstration.</p>
+            <div class="gallery-grid">
+                <article class="song-card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/100x100bb.jpg" alt="In Rainbows album cover">
+                    <h3>Weird Fishes/Arpeggi</h3>
+                    <p class="artist">Radiohead</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="review">
+                        "Absolutely beautiful production."
+                    </p>
+                </article>
+                <article class="song-card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/100x100bb.jpg" alt="Discovery album cover">
+                    <h3>Digital Love</h3>
+                    <p class="artist">Daft Punk</p>
+                    <p class="rating">★★★★☆</p>
+                    <p class="review">
+                        "Such a fun, nostalgic song."
+                    </p>
+                </article>
+                <article class="song-card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/100x100bb.jpg" alt="Rumours album cover">
+                    <h3>Dreams</h3>
+                    <p class="artist">Fleetwood Mac</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="review">
+                        "Never gets old."
+                    </p>
+                </article>
+            </div>
+        </section>
+        <div id="webuse">
+            TrackRecord Lets You:
+            <ul>
+                <li>Document your musical journey🎶</li>
+                <li>Create a massive music library of the songs you listened to📖</li>
+                <li>Rate the music you listen to🌟</li>
+                <li>Write reviews about your favorite songs✍️</li>
+                <li>Connect with other fans👥</li>
+                <li>Learn what others think about the music you like🤔</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <nav id="footernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 TrackRecord. All rights reserved.</p>
+    </footer>
 </body>
 </html>
