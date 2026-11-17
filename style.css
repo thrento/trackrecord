@@ -70,7 +70,7 @@ main > img {
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
         ),
-        url("trackrecordwelcome.jpg");
+        url("images/trackrecordwelcome.jpg");
 
     background-size: cover;
     background-position: center;
