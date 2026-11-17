@@ -262,6 +262,85 @@ main > img {
     transform: scale(1.15);
 }
 
+/* Login page */
+#login, #register {
+    background-color: #2D2020;
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#login h2, #register h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#login > p, #register > p {
+    color: #BBBBBB;
+}
+
+/* Login form */
+#login-form, #register-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+#login-form label, #register-form label {
+    color: #EEEEEE;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#login-form input, #register-form input {
+    background-color: #1D1616;
+    color: #FFFFFF;
+    border: 1px solid #664444;
+    border-radius: 6px;
+    padding: 13px;
+    font-size: 15px;
+}
+
+#login-form input:focus, #register-form input:focus {
+    outline: 2px solid #D84040;
+    outline-offset: 1px;
+}
+
+#login-form button, #register-form button {
+    background-color: #D84040;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover, #register-form button:hover {
+    background-color: #A52A2A;
+}
+
+/* Create account link */
+.account-link {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.account-link a {
+    color: #D84040;
+    text-decoration: none;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 
 /* Footer navigation */
@@ -483,6 +562,18 @@ footer {
 
     #webuse li span:last-child {
         font-size: 15px;
+    }
+    #login, #register {
+        margin: 30px auto;
+        padding: 25px 20px;
+    }
+
+    #login h2, #register h2 {
+        font-size: 26px;
+    }
+
+    #login-form input, #register-form input {
+        width: 100%;
     }
 
     /* Footer */

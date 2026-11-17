@@ -10,6 +10,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1><a href="index.html">TrackRecord</a></h1>
+        <nav id="headernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Welcome Back</h2>
+            <p>Log in to your TrackRecord account</p>
 
+            <form id="login-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter your password" required>
+
+                <button type="submit">Log In</button>
+            </form>
+
+            <p class="account-link">
+                Don't have an account?
+                <a href="register.html">Create one here</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <nav id="footernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 TrackRecord. All rights reserved.</p>
+    </footer>
 </body>
 </html>
