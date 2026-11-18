@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Others - TrackRecord</title>
+    <title>Search Songs - Track Record</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <header>
+        <h1><a href="index.html">TrackRecord</a></h1>
+        <nav id="headernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="user-search">
+            <h2>Discover Users</h2>
+            <p>Find other music enthusiasts on TrackRecord!</p>
+            <form id="user-search-form">
+                <input type="search" id="user-input" name="username" placeholder="Search by username..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="user-results">
+            <h2>Search Results</h2>
+            <div class="user-list">
+                <article class="user-row">
+                    <div class="user-avatar">👤</div>
+                    <div class="user-info">
+                        <h3>musicfan01</h3>
+                        <p>38 songs rated · 4.3 average rating</p>
+                    </div>
+                    <a href="profile.html" class="view-profile">View Profile</a>
+                </article>
+                <article class="user-row">
+                    <div class="user-avatar">👤</div>
+                    <div class="user-info">
+                        <h3>vinylcollector</h3>
+                        <p>124 songs rated · 4.1 average rating</p>
+                    </div>
+                    <a href="profile.html" class="view-profile">View Profile</a>
+                </article>
+            </div>
+            <p id="user-message" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer>
+        <nav id="footernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 TrackRecord. All rights reserved.</p>
 </body>
 </html>
