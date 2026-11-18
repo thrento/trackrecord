@@ -1,15 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>musicfan101 Library - TrackRecord</title>
+    <title>Music Library - TrackRecord</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <header>
+        <h1><a href="index.html">TrackRecord</a></h1>
+
+        <nav id="headernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="profile.html" class="return-button">
+            ← Return to Profile
+        </a>
+        <!-- Library heading -->
+        <section id="library-header">
+            <h2>musicfan01's Library</h2>
+            <p>38 songs reviewed</p>
+        </section>
+
+        <!-- Library filters -->
+        <section id="library-filters">
+            <h2>Filter Reviews</h2>
+
+            <form id="filter-form">
+                <div class="filter-fields">
+                    <div class="filter-group">
+                        <label for="library-search">
+                            Search by Song or Artist
+                        </label>
+
+                        <input type="search" id="library-search" placeholder="Enter a song or artist...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="rating-filter">
+                            Filter by Rating
+                        </label>
+
+                        <select id="rating-filter">
+                            <option value="all">All Ratings</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="apply-filters">
+                    Apply Filters
+                </button>
+            </form>
+        </section>
+
+        <!-- Library reviews -->
+        <section id="library-reviews">
+            <h2>All Reviews</h2>
+
+            <div class="song-list">
+
+                <!-- Review 1 -->
+                <article class="song-row">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/100x100bb.jpg"
+                        alt="In Rainbows album cover" class="song-artwork">
+
+                    <div class="song-info">
+                        <h3>Weird Fishes/Arpeggi</h3>
+                        <p>Radiohead</p>
+                    </div>
+
+                    <span class="library-rating" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </span>
+
+                    <button type="button" class="view-review">
+                        View Review
+                    </button>
+                </article>
+
+                <!-- Review 2 -->
+                <article class="song-row">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/100x100bb.jpg"
+                        alt="Discovery album cover" class="song-artwork">
+
+                    <div class="song-info">
+                        <h3>Digital Love</h3>
+                        <p>Daft Punk</p>
+                    </div>
+
+                    <span class="library-rating" aria-label="4 out of 5 stars">
+                        ★★★★☆
+                    </span>
+
+                    <button type="button" class="view-review">
+                        View Review
+                    </button>
+                </article>
+
+                <!-- Review 3 -->
+                <article class="song-row">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/100x100bb.jpg"
+                        alt="Rumours album cover" class="song-artwork">
+
+                    <div class="song-info">
+                        <h3>Dreams</h3>
+                        <p>Fleetwood Mac</p>
+                    </div>
+
+                    <span class="library-rating" aria-label="5 out of 5 stars">
+                        ★★★★★
+                    </span>
+
+                    <button type="button" class="view-review">
+                        View Review
+                    </button>
+                </article>
+
+            </div>
+
+            <button type="button" id="load-more">
+                Load More Reviews
+            </button>
+        </section>
+
+        <dialog id="review-dialog">
+            <h2 id="detail-title">Song Title</h2>
+            <p id="detail-artist">Artist</p>
+            <p id="detail-rating">★★★★★</p>
+            <p id="detail-review">Written review goes here.</p>
+
+            <button type="button" id="close-review">
+                Close
+            </button>
+        </dialog>
+    </main>
+
+    <footer>
+        <nav id="footernav">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Create Account</a></li>
+                <li><a href="songs.html">Discover Songs</a></li>
+                <li><a href="users.html">Discover Users</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 TrackRecord. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

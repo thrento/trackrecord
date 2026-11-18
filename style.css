@@ -670,6 +670,198 @@ main>img {
     transform: translateY(-3px);
 }
 
+/* Library heading */
+#library-header {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+#library-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#library-header p {
+    color: #BBBBBB;
+}
+
+/* Library filters */
+#library-filters {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #2D2020;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+#library-filters h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#filter-form {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.filter-group label {
+    color: #DDDDDD;
+    font-size: 14px;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 13px;
+    background-color: #1D1616;
+    color: #FFFFFF;
+    border: 1px solid #664444;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    outline: 2px solid #D84040;
+    outline-offset: 1px;
+}
+#filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter-fields {
+    display: flex;
+    gap: 20px;
+}
+
+#apply-filters {
+    width: 100%;
+    padding: 14px;
+    background-color: #D84040;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#apply-filters:hover {
+    background-color: #A52A2A;
+}
+/* Library reviews */
+#library-reviews {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#library-reviews h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.library-rating {
+    color: #D84040;
+    font-size: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* View Review button */
+.view-review {
+    background-color: #D84040;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.view-review:hover {
+    background-color: #A52A2A;
+}
+
+/* Load More button */
+#load-more {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 25px;
+    background-color: #D84040;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#load-more:hover {
+    background-color: #A52A2A;
+}
+
+/* Review detail popup */
+#review-dialog {
+    width: min(90%, 500px);
+    background-color: #2D2020;
+    color: #FFFFFF;
+    border: 1px solid #664444;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#review-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#detail-rating {
+    color: #D84040;
+    font-size: 22px;
+}
+
+#detail-review {
+    color: #CCCCCC;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+#close-review {
+    background-color: #D84040;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#close-review:hover {
+    background-color: #A52A2A;
+}
+/* Return to Profile Button */
+.return-button {
+    display: inline-block;
+    color: #D84040;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.return-button:hover {
+    color: #FFFFFF;
+    transform: translateX(-5px);
+}
 
 /* Footer */
 
